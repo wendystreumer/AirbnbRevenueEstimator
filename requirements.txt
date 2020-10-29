@@ -19,7 +19,6 @@ ipython-genutils==0.2.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
 jupyter_core==4.6.3
-libxgboost==0.90
 markupsafe==1.1.1
 nbformat==5.0.7
 numpy==1.19.1
@@ -30,4 +29,5 @@ pytz==2020.1
 six==1.15.0
 traitlets==4.3.3
 unidecode==1.1.1
-Werkzeug==1.0.1
+werkzeug==1.0.1
+xgboost==1.2.0
