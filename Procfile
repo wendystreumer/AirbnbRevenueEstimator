@@ -1,1 +1,1 @@
-web: gunicorn app:server
+web: gunicorn AirbnbRevenueEstimator_Dash:server
