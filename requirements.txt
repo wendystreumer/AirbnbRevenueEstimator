@@ -29,7 +29,6 @@ entrypoints==0.3
 Fiona==1.8.4
 Flask==1.1.2
 future==0.18.2
-GDAL==2.3.3
 geopandas==0.6.1
 imageio==2.9.0
 imagesize==1.2.0
