@@ -47,7 +47,7 @@ matplotlib: 3.3.1
 <br>
 seaborn: 0.11.0
 <br>
-pickleshare: 0.7.5
+geopandas: 0.6.1
 <br>
 scikit-learn: 0.23.2
 <br>
