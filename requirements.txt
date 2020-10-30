@@ -12,7 +12,7 @@ bcrypt @ file:///C:/ci/bcrypt_1597936262193/work
 bleach @ file:///tmp/build/80754af9/bleach_1600439572647/work
 Brotli @ file:///C:/ci/brotli-split_1602517705222/work
 brotlipy==0.7.0
-catboost @ https://pypi.org/packages/cp36/c/catboost/catboost-0.24-cp36-none-win_amd64.whl
+catboost==0.24
 certifi==2020.6.20
 cffi @ file:///C:/ci/cffi_1600681203656/work
 chardet==3.0.4
