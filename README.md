@@ -4,7 +4,7 @@ Final application: In progress
 
 ### Purpose of project
 
-In this project I try to find out the characteristics that influence property prices and Airbnb prices. The end product is an application where users can find out how much revenue they can make renting out a property through Airbnb, and how this revenue compares to the total value of the property.
+In this project I try to find out the characteristics that influence property prices and Airbnb prices. The end product is an application where users can find out how much revenue they can make by renting out a property through Airbnb, and how this revenue compares to the total value of the property.
 
 This is a personal project for self-learning purposes. The aim of this project was to carry out a data project from A to Z, using multiple data sources. I specifically wanted to learn to work with dash and plotly to deploy my models and create interactive graphs.
 
@@ -51,6 +51,10 @@ geopandas: 0.6.1
 <br>
 scikit-learn: 0.23.2
 <br>
+shap: 0.36.0
+<br>
 plotly: 4.11.0
 <br>
 dash: 1.16.3
+<br>
+dash-bootstrap-components==0.10.7
