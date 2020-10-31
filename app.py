@@ -29,25 +29,11 @@ with open('properati_reduced.pkl', 'rb') as f_df_properati:
 with open('airbnb_model_catboost.pkl', 'rb') as f_model_airbnb:
     airbnb_model = pickle.load(f_model_airbnb)
     
+with open('properati_model_XGB.pkl', 'rb') as f_model_properati:
+    properati_model = pickle.load(f_model_properati)
+    
 subtes = pd.read_csv('estaciones-de-subte.csv', encoding='utf8')
 subte_D = subtes[subtes.linea=='D'].copy()
-    
-# The model for the Airbnb price predictions is too big for Github,
-# so I first have to train this model again.
-
-X = properati[['lat', 'lon', 'rooms', 'bedrooms', 'bathrooms', 'surface_total',
-               'surface_covered', 'pool', 'parking', 'gym', 'balcony/patio', 'garden',
-               'terrace', 'bbq', 'sum', 'min_dist_to_subte', 'min_dist_to_subteD',
-               'ALMAGRO', 'BALVANERA', 'BELGRANO', 'BOCA', 'CABALLITO', 'CHACARITA',
-               'COGHLAN', 'CONSTITUCION', 'MONSERRAT', 'NUEVA POMPEYA', 'PALERMO',
-               'PARQUE CHACABUCO', 'PATERNAL', 'PUERTO MADERO', 'RECOLETA', 'RETIRO',
-               'SAAVEDRA', 'SAN CRISTOBAL', 'SAN NICOLAS', 'VILLA DEVOTO',
-               'VILLA LUGANO']]
-
-y = np.log(properati['price_usd'])
-
-properati_model = XGBRegressor(random_state=12, max_depth=20)
-properati_model.fit(X, y)
 
 # Defining functions to calculate the distance between a certain location and
 # the nearest metro station (one of the features in the models).
