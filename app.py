@@ -17,7 +17,6 @@ from dash.dependencies import Input, Output, State
 from math import radians, cos, sin, asin, sqrt
 import dash_bootstrap_components as dbc
 import unidecode
-from xgboost.sklearn import XGBRegressor
 
 # Importing the datasets and models.
 with open('airbnb_reduced.pkl', 'rb') as f_df_airbnb:
