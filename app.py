@@ -118,6 +118,7 @@ amenities_properati = ['pool', 'parking', 'gym', 'balcony/patio', 'garden',
 # needed to obtain the input for the models.
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.YETI])
+server = app.server
 
 select_neighbourhood = html.Div(
                                 [html.Label('Neighbourhood:'),
