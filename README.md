@@ -1,6 +1,6 @@
 ## Airbnb Revenue Estimator - City of Buenos Aires
 
-Final application: In progress
+Final application: https://airbnb-revenue-estimator.herokuapp.com/
 
 ### Purpose of project
 
