@@ -23,10 +23,10 @@ Tree-based models gave the best result for both predicting property prices as we
 
 It was quite difficult to predict the prices on Airbnb, the best result I got was an R2 of 0.554 on the test set with a CatBoost Regressor. The most important features in this model are:
 
-- ***Cleaning fee*** (positive effect): the higher the cleaning fee, the higher the predicted price.
-- ***Accommodates*** (positive effect): the more guests an airbnb listing can accomodate, the higher the predicted price.
-- ***Private room*** (negative effect): if the airbnb listing is a private room, the predicted price will be lower.
-- ***Reviews per month*** (negative effect): the lower the amount of reviews per month, the higher the predicted price.
+- ***Cleaning fee*** (positive effect): The higher the cleaning fee, the higher the predicted price.
+- ***Accommodates*** (positive effect): The more guests an airbnb listing can accomodate, the higher the predicted price.
+- ***Private room*** (negative effect): If the airbnb listing is a private room, the predicted price will be lower. The most common room type is an 'Entire home/apartment'. It makes intuitive sense that listings with the room type 'Private room' are cheaper, as they can probably host less guests than an entire home/apartment.
+- ***Reviews per month*** (negative effect): The lower the amount of reviews per month, the higher the predicted price. This surprised me at first, because I expected that more popular listings (with more reviews per month) could charge more money per night. But looking at it the the other way around, that listings with lower prices are more popular and therefore have more reviews, makes sense to me.
 - ***Latitude*** (positive effect): the bigger the latitude (the more north the property location), the higher the predicted price.
 
 For predicting the total property prices, I choose to use a XGBoost Regressor. With this model I reached an R2 of 0.953 on the test set. The most important features are:
